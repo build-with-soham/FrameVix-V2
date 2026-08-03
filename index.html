@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FrameVix — Watch Original Films</title>
+<meta name="description" content="FrameVix is a cinematic streaming platform for original short films, documentaries and trailers — all playable right here.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="icon" href="assets/logo/logo.png">
+</head>
+<body data-page="home">
+
+  <div class="cinematic-bg" aria-hidden="true"></div>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div class="loader" id="loader">
+    <div class="loader-mark">FRAME<span>VIX</span></div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand">
+        
+        <span class="brand-text">FRAME<em>VIX</em></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" data-page="home"  >Home</a>
+        <a href="browse.html" data-page="browse" >Browse</a>
+        <a href="mylist.html" data-page="mylist" >My List</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="icon-btn" id="searchOpen" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE PANEL ============ -->
+  <nav class="mobile-panel" id="mobilePanel">
+    <a href="index.html" data-page="home">Home</a>
+    <a href="browse.html" data-page="browse">Browse</a>
+    <a href="mylist.html" data-page="mylist">My List</a>
+    <a href="about.html" data-page="about">About</a>
+    <a href="contact.html" data-page="contact">Contact</a>
+    
+  </nav>
+
+  <!-- ============ SEARCH OVERLAY ============ -->
+ <div class="search-overlay" id="searchOverlay">
+    <button class="search-close" id="searchCloseBtn" aria-label="Close search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="search-box-wrap">
+      <span class="search-icon-inline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.3-4.3"/>
+        </svg>
+      </span>
+      <input type="text" id="globalSearchInput" placeholder="Search FrameVix…" aria-label="Search FrameVix" autocomplete="off">
+      <p class="search-hint">Press Enter to see full results on the Browse page</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-bg"><img id="heroImg" src="assets/images/bg image.png" alt="FrameVix — every frame tells a story"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">FrameVix Original</p>
+        <div class="hero-meta">
+          <span class="pill accent" id="heroGenre"></span>
+          <span class="dot-sep"></span>
+          <span id="heroYear"></span>
+          <span class="dot-sep"></span>
+          <span id="heroDuration"></span>
+        </div>
+        <h1 class="hero-title" id="heroTitle"></h1>
+        <p class="hero-desc" id="heroDesc"></p>
+        <div class="hero-btns">
+          <button class="btn btn-primary glow" id="heroWatchBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8V4z"/></svg>
+            Watch Now
+          </button>
+          <button class="btn btn-ghost" id="heroInfoBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v6M12 7.5v.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            More Info
+          </button>
+        </div>
+      </div>
+      <div class="scroll-cue">
+        <span>Scroll</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ ROWS (built by app.js) ============ -->
+    <div id="rows"></div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            
+            <span class="brand-text">FRAME<em>VIX</em></span>
+          </a>
+          <p>An original streaming platform for short films, documentaries and trailers — built and directed by Soham.</p>
+          <div class="footer-socials">
+            <a href="https://www.youtube.com/@SOHAM-29" target="_blank" rel="noopener" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5V8.5l6.3 3.5-6.3 3.5Z"/></svg></a>
+            <a href="https://github.com/build-with-soham" target="_blank" rel="noopener" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12a11.5 11.5 0 0 0 7.9 11c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11 11 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5Z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h5>Explore</h5>
+          <a href="index.html">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="mylist.html">My List</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h5>Categories</h5>
+          <a href="browse.html?category=Short%20Films">Short Films</a>
+          <a href="browse.html?category=Documentaries">Documentaries</a>
+          <a href="browse.html?category=Trailers">Trailers</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 FrameVix. All rights reserved.</span>
+        <span>Designed with <span class="heart">♥</span> by Soham</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- ============ QUICK-PLAY MODAL ============ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-player">
+        <iframe id="modalIframe" src="" title="Video player" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 id="modalTitleText"></h3>
+        <p id="modalDescText"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/movies.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

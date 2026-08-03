@@ -1,0 +1,60 @@
+/* =========================================================
+   FrameVix — responsive.css
+   Mobile-first overrides. Base styles in style.css already
+   scale with clamp(), this file handles structural changes.
+   ========================================================= */
+
+/* ---------- ≥ 640px : small tablets ---------- */
+@media (min-width: 640px) {
+  .stats-row { grid-template-columns: repeat(4, 1fr); }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- ≥ 860px : nav switches to desktop layout ---------- */
+@media (min-width: 860px) {
+  .nav-links { display: flex; }
+  .nav-toggle { display: none; }
+  .mobile-panel { display: none !important; }
+  .contact-grid { grid-template-columns: 1.1fr 0.9fr; }
+}
+
+/* ---------- < 860px : mobile nav + stacked hero actions ---------- */
+@media (max-width: 859.98px) {
+  .row-arrow { display: none !important; }
+}
+
+/* ---------- ≥ 780px : row arrows appear (need room to click) ---------- */
+@media (min-width: 780px) {
+  .row-arrow { display: flex; }
+}
+
+/* ---------- ≤ 720px : movie page stacks ---------- */
+@media (max-width: 720px) {
+  .movie-main { grid-template-columns: 1fr; margin-top: -80px; }
+  .movie-poster { max-width: 220px; margin: 0 auto; }
+  .movie-info { text-align: center; }
+  .movie-info .hero-meta, .movie-actions { justify-content: center; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-photo { max-width: 320px; margin: 0 auto; }
+}
+
+/* ---------- ≤ 600px : stats / cards ---------- */
+@media (max-width: 600px) {
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+  .hero-btns .btn { flex: 1; justify-content: center; }
+  .footer-top { flex-direction: column; gap: 26px; }
+  .card { width: clamp(160px, 68vw, 240px); }
+  .search-close { top: 18px; right: 16px; }
+}
+
+/* ---------- ≤ 420px : very small phones ---------- */
+@media (max-width: 420px) {
+  :root { --nav-h: 62px; }
+  .brand span.brand-text { font-size: 17px; }
+  .hero-title { font-size: 32px; }
+}
+
+/* ---------- Print (just in case) ---------- */
+@media print {
+  .navbar, .modal-overlay, .back-to-top, .loader { display: none !important; }
+}

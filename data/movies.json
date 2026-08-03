@@ -1,0 +1,80 @@
+[
+  {
+    "id": "the-storyverse",
+    "title": "The Storyverse",
+    "youtubeId": "roVkpNvxXxo",
+    "genre": "Cinematic",
+    "category": "Trailers",
+    "year": 2024,
+    "duration": "0:26",
+    "description": "A 26-second cinematic trailer that sets the tone for everything FrameVix stands for — mood, motion, and story in miniature. Built to be watched, re-watched, and felt.",
+    "trending": true,
+    "original": true,
+    "latest": true
+  },
+  {
+    "id": "parallel",
+    "title": "Parallel",
+    "youtubeId": "zTqvN5zM4oA",
+    "genre": "Drama",
+    "category": "Short Films",
+    "year": 2024,
+    "duration": "6:40",
+    "description": "Two sides of an engineering student's life, told in parallel — the version they show the world, and the version they actually live.",
+    "trending": true,
+    "original": true,
+    "latest": false
+  },
+  {
+    "id": "the-notebook-endgame",
+    "title": "The Notebook — Endgame",
+    "youtubeId": "MRMh3NCNig8",
+    "genre": "Drama",
+    "category": "Short Films",
+    "year": 2024,
+    "duration": "5:12",
+    "description": "A story that closes the loop it opened. Every notebook has a last page — this is the one nobody wanted to write.",
+    "trending": false,
+    "original": true,
+    "latest": true
+  },
+  {
+    "id": "the-call",
+    "title": "The Call",
+    "youtubeId": "Hs_ItslyXq0",
+    "genre": "Horror",
+    "category": "Short Films",
+    "year": 2024,
+    "duration": "8:03",
+    "description": "One of FrameVix's most acclaimed works — a slow-burn descent into horror and the psychology of fear itself. Answer only if you're ready.",
+    "trending": true,
+    "original": true,
+    "latest": false
+  },
+  {
+    "id": "unfold",
+    "title": "Unfold",
+    "youtubeId": "RbjmBPf1j5w",
+    "genre": "Psychological",
+    "category": "Short Films",
+    "year": 2024,
+    "duration": "7:21",
+    "description": "A mind-bending psychological short film that unravels the moment you think you've understood it. Nothing here stays folded for long.",
+    "trending": false,
+    "original": true,
+    "latest": true
+  },
+  {
+    "id": "college-escape",
+    "title": "We Escaped College for a Day",
+    "youtubeId": "kjLg6p9rqAQ",
+    "genre": "Documentary",
+    "category": "Documentaries",
+    "year": 2024,
+    "duration": "12:47",
+    "description": "A cinematic trek documentary following one day of escape, freedom, and everything college doesn't teach you in a classroom.",
+    "trending": false,
+    "original": false,
+    "latest": true
+  }
+]
