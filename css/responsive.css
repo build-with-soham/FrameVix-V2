@@ -48,6 +48,10 @@
     object-position: 65% center; /* shift crop so the title text stays in frame */
   }
 }
+@media (max-width: 780px) {
+  .hero-img-desktop { display: none; }
+  .hero-img-mobile { display: block; }
+}
 
 /* ---------- ≤ 720px : movie page stacks ---------- */
 @media (max-width: 720px) {
