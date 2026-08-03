@@ -379,8 +379,10 @@ ul { list-style: none; }
 .hero-bg img {
   width: 100%; height: 100%;
   object-fit: cover;
-  object-position: center 30%; /* was implicit center center */
+  position: absolute;
+  inset: 0;
 }
+.hero-img-mobile { display: none; }
 .hero-overlay {
   position: absolute; inset: 0;
   background:
