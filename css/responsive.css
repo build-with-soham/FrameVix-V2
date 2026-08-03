@@ -39,6 +39,15 @@
       linear-gradient(0deg, rgba(8,8,8,0.75) 0%, rgba(8,8,8,0.15) 45%, rgba(8,8,8,0.15) 100%);
   }
 }
+@media (max-width: 780px) {
+  .hero {
+    height: 62vh;       /* shorter box = less brutal cropping */
+    min-height: 420px;
+  }
+  .hero-bg img {
+    object-position: 65% center; /* shift crop so the title text stays in frame */
+  }
+}
 
 /* ---------- ≤ 720px : movie page stacks ---------- */
 @media (max-width: 720px) {
