@@ -16,13 +16,11 @@
 }
 .brand-text::first-letter {
   color: #e50914;
-  font-size: 22px;   /* ← still hardcoded */
   font-weight: 700;
   font-family: 'Oswald', sans-serif;
 }
 .brand-text em {
   font-family: 'Oswald', sans-serif;
-  font-size: 22px;   /* ← still hardcoded */
   letter-spacing: 3px;          
   color: #e50914;
   font-weight: 700;
