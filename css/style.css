@@ -726,7 +726,7 @@ ul { list-style: none; }
 .genre-chip:hover { border-color: var(--accent); color: var(--text); transform: translateY(-3px); background: rgba(229,9,20,0.08); }
 
 /* Contact page */
-.contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 30px; padding: 50px 0 70px; }
+.contact-grid { display: grid; grid-template-columns: 1fr; gap: 30px; padding: 50px 0 70px; }
 .form-group { margin-bottom: 18px; }
 .form-group label { display: block; font-size: 13px; color: var(--text-dim); margin-bottom: 7px; }
 .form-group input, .form-group textarea {
