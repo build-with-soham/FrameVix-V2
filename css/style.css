@@ -9,24 +9,24 @@
 
 .brand-text {
   font-family: 'Oswald', sans-serif;
-  font-weight: 750;
+  font-weight: 700;
   letter-spacing: 3px;
-  font-size: 23px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 .brand-text::first-letter {
   color: #e50914; /* red F, rest white */
-  font-size: 23px;
-  font-weight: 750;
+  font-size: 22px;
+  font-weight: 700;
   font-family: 'Oswald', sans-serif;
   
 }
 .brand-text em {
     font-family: 'Oswald', sans-serif;   /* Change to any font you like */
-     font-size: 23px;
+     font-size: 22px;
      letter-spacing: 3px;          
     color: #e50914;                 /* Optional: keep VIX red */
-    font-weight: 750;
+    font-weight: 700;
 }
 
 
